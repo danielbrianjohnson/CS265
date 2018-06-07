@@ -1,0 +1,15 @@
+# Initilize $15 in 10 ones and 1 five
+init 15 = 10 1 0 0 
+# Make a $38 purchase using 2 twenties
+purchase 38 = 0 0 0 2
+# Get change for a five with 5 ones
+change 0 1 = 5
+# Test blank line
+
+# Get report
+report
+# Test error 2 that amounts dont jibe
+purchase 36 = 1 2 0 0
+# Request change we don't have (error 3)
+change 0 5 = 5
+# Test error code 4 by changing name of input file
